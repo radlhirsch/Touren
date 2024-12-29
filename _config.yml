@@ -1,0 +1,72 @@
+# Site settings
+title: Wolfgang's Tourenportal
+subtitle: Hauptsache draussen
+author: Wolfgang Müller-Hirsch
+bio: 'Esslingen, Germany.'
+avatar: assets/img/wolfgang.jpg
+email: wolfgang.mueller-hirsch@posteo.de
+description: Meine persönliches Tourenportal.
+baseurl: # the subpath of your site, e.g. /blog
+locale:             de
+url:                https://radlhirsch.github.io/Touren/  
+street_address:
+city: Esslingen
+state:
+zip_code:
+country: Germany
+phone:
+
+# Social settings
+# 500px_url:
+facebook_url: none
+github_url: https://github.com/radlhirsch
+# instagram_url:
+# linkedin_url: 
+# pinterest_url:
+# slack_url:
+# twitter_url: https://twitter.com/
+# xing_url: https://www.xing.com/profile/
+
+# Comments
+
+# Build settings
+
+# Jekyll
+permalink:          /:categories/:year/:month/:day/:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            false
+sass:
+  sass_dir:         _sass
+  style:            compressed
+
+compress_html:
+  clippings: []
+  comments: []
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
+
+# Gems
+plugins:
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-admin
+  - jekyll-seo-tag
+
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, _draft, _gentags.rb]
+include: [BingSiteAuth.xml]

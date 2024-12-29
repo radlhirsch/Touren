@@ -1,0 +1,53 @@
+---
+layout: compress
+---
+<!DOCTYPE HTML>
+{% include navlang.html %}
+<html lang="{{ navlang }}">
+{% include head.html %}
+<body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+                {% include header.html %}
+                {{ content }}
+                {% include collecttags.html %}
+                {% assign asize = 0 %}
+                {% for stag in stags %}
+                    {% if page.lang %}
+                        {% assign ltags=site.tags[stag] | where:"lang", page.lang %}
+                    {% else %}
+                        {% assign ltags=site.tags[stag] %}
+                    {% endif %}
+                    {% assign asize = asize | plus: ltags.size %}
+                {% endfor %}
+                <section>
+                    <ul class="icons">
+                    {% for stag in stags %}
+                        {% if page.lang %}
+                            {% assign ltags=site.tags[stag] | where:"lang", page.lang %}
+                        {% else %}
+                            {% assign ltags=site.tags[stag] %}
+                        {% endif %}
+                        {% assign rel_tag_size = ltags.size | times: 7.0 | divided_by: asize | plus: 0.85 %}
+                        <li>
+                            <a href="{{ site.url }}/tags/{{ navlang }}/{{ stag }}" style="text-decoration: none; border-bottom:none">
+                                <span style="white-space: nowrap; font-size: {{ rel_tag_size }}em; padding: 0.2em;">
+                                    {{ stag }}
+                                    <span>({{ ltags.size }})</span>
+                                </span>
+                            </a>
+                        </li>
+                    {% endfor %}
+                    </ul>
+                </section>
+            </div>
+        </div>
+        {% include sidebar.html %}
+    </div>
+    {% include footer.html %}
+</body>
+
+</html>

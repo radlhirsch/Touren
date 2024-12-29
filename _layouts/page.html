@@ -1,0 +1,28 @@
+---
+layout: compress
+---
+<!DOCTYPE HTML>
+{% include navlang.html %}
+<html lang="{{ navlang }}">
+  {% include head.html %}
+  <body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+                {% include header.html %}
+                <!-- Content -->
+                <section>
+                  {% if page.image %}
+                	<span class="image main"><img src="{{ page.image | absolute_url }}" alt="" /></span>
+                  {% endif %}
+                  {{ content }}
+                </section>
+              </div>
+          </div>
+          {% include sidebar.html %}
+      </div>
+      {% include footer.html %}
+  </body>
+</html>

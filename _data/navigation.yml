@@ -1,0 +1,37 @@
+locales:
+  en:
+    languages:
+      - title: "Zu Deutsch wechseln"
+        url: /de/
+        lang: de
+    posts:
+      - title: "All posts"
+        url: /posts/en/
+    tags:
+      - title: Tags of all posts
+        url: /tags/en/
+    MTB:
+      - title: All MTB tours
+        url: /MTB/
+    Hiking:
+      - title: All Hiking tours
+        url: /Wandern/    
+    links:
+  de:
+    languages:
+      - title: "Switch to English"
+        url: /en/
+        lang: en
+    posts:
+      - title: "Alle Artikel"
+        url: /posts/de/
+    tags:
+      - title: Tags aller Artikel
+        url: /tags/de/
+    MTB:
+      - title: Alle MTB Touren
+        url: /MTB/    
+    Hiking:
+      - title: Alle Wander Touren
+        url: /Wandern/    
+    links:

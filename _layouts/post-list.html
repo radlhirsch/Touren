@@ -1,0 +1,50 @@
+---
+layout: compress
+---
+<!DOCTYPE HTML>
+{% include navlang.html %}
+<html lang="{{ navlang }}">
+    {% include head.html %}
+    <body>
+        <!-- Wrapper -->
+        <div id="wrapper">
+            <!-- Main -->
+            <div id="main">
+                <div class="inner">
+                    {% include header.html %}
+                    {{ content }}
+                    <section>
+                        <div class="posts">
+                            {% if page.tag %} <!-- tag page -->
+                                {% assign posts=site.tags[page.tag] | where:"lang", page.lang %}
+                            {% elsif page.lang %} <!-- list of posts of a specific language -->
+                                {% assign posts=site.posts | where:"lang", page.lang %}
+                            {% else %} <!-- list of all posts -->
+                                {% assign posts=site.posts %}
+                            {% endif %} 
+                            {% for post in posts %} 
+                                {% if post.title != null %}
+                                    <article>
+                                        {% if post.thumb %}
+                                            {% if post.thumb contains 'http' %}{% assign domain_thumb = '' %}{% else %}{% assign domain_thumb = site.url %}{% endif %}
+                                            <a href="{{ site.url }}{{ post.url }}" class="image">
+                                                <img src="{{ domain_thumb }}{{ post.thumb }}" alt="{{ site.data.messages.locales[navlang].btn_more }}" />
+                                            </a>
+                                        {% endif %}
+                                        <h5>{{ post.date | date_to_string }}</h5>
+                                        <h3>
+                                            <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                                        </h3>
+                                        <p>{{ post.excerpt }}</p>
+                                    </article>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </section>
+                </div>
+            </div>
+            {% include sidebar.html %}
+        </div>
+        {% include footer.html %}
+    </body>
+</html>

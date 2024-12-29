@@ -1,0 +1,38 @@
+// Base Class Definition
+// -------------------------
+
+.#{$fa-css-prefix},
+.fas,
+.far,
+.fal,
+.fad,
+.fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.#{$fa-css-prefix}icon,
+.fasicon,
+.faricon,
+.falicon,
+.fadicon,
+.fabicon {
+  @include fa-icon;
+	border-bottom: none;
+  line-height: 1;
+	position: relative;
+  text-rendering: auto;
+	> .label {
+		display: none;
+	}
+}
+
+
+%fa-icon {
+  @include fa-icon;
+}
