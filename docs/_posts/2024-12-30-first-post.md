@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "First post!"
 ---
 
 ## Welcome
@@ -10,4 +10,4 @@ title:  "Welcome to Jekyll!"
 I hope you like it!
 
 ... which is shown in the picture below:
-![My happy face](/assets/img/wolfgang.jpg)
+[My happy face](assets/img/wolfgang.jpg)

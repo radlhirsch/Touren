@@ -13,5 +13,3 @@ ref: homepage
 [Gravel Touren](Gravel/Gravel.md)
 
 [Wander Touren](Wandern/Wandern.md)
-
-[Posts](posts/de.md)
