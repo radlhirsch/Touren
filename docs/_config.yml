@@ -1,0 +1,55 @@
+remote_theme: pages-themes/dinky@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+- jekyll-relative-links
+
+#theme: minima
+author: radl_hirsch
+description: Dokumentation der Photovoltaik-Anlage Hirschlandstrasse 156
+
+markdown: GFM
+
+
+relative_links:
+  enabled: true
+  collections: true
+
+include:
+  - index.md
+  - README.md
+  - MTB.md
+  - Wandern.md
+  - Gravel.md
+  - Paddeln.md
+  - Skitour.md
+  - Technik.md
+  - Orte.md
+
+# Site settings
+title: Wolfgang's Tourenportal
+subtitle: Hauptsache draussen
+author: Wolfgang Müller-Hirsch
+bio: 'Esslingen, Germany.'
+avatar: assets/img/wolfgang.jpg
+email: wolfgang.mueller-hirsch@posteo.de
+description: Meine persönliches Tourenportal.
+baseurl: # the subpath of your site, e.g. /blog
+locale:             de
+url:                https://radlhirsch.github.io/Touren/  
+street_address:
+city: Esslingen
+state:
+zip_code:
+country: Germany
+phone:
+
+# Social settings
+github_url: https://github.com/radlhirsch
+# outdooractive_url:
+# komoot_url: 
+# strava_url:
+
+# Comments
+
+# Build settings
+

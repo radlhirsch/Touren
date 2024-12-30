@@ -1,6 +1,6 @@
 ---
 layout: Wandern-list
-title: Alle Artikel
+title: Alle Wander Touren
 excerpt: "Liste aller Wander-Touren auf Deutsch"
 comments: false
 lang: de
