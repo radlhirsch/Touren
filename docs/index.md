@@ -1,5 +1,9 @@
 ---
+layout: home
 title: INDEX
+comments: false 
+ref: homepage
+---
 ---
 
 ## Übersicht der Aktivitäten
@@ -10,4 +14,4 @@ title: INDEX
 
 [Wander Touren](Wandern/Wandern.md)
 
-[Posts](_posts)
+[Posts](posts/de.md)
