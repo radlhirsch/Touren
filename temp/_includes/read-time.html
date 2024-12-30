@@ -1,3 +1,0 @@
-{% assign wpm = site.words_per_minute | append: '.0' %}
-{% assign readtime = content | strip_html | number_of_words | divided_by:wpm | round %}
-{{ site.data.messages.locales[navlang].reading_time }} ~{% if readtime <= 1 %}1 {{ site.data.messages.locales[navlang].minute }}{% else %}{{ readtime }} {{ site.data.messages.locales[navlang].minutes }}{% endif %}

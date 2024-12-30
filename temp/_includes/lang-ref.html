@@ -1,3 +1,0 @@
-{% assign lang_ref_pages=site.pages | where:"ref", page.ref %}
-{% assign lang_ref_posts=site.posts | where:"ref", page.ref %}
-{% assign lang_ref_pages = lang_ref_pages | concat: lang_ref_posts  | sort: 'lang' %}
