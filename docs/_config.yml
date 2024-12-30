@@ -1,15 +1,22 @@
-remote_theme: pages-themes/dinky@v0.2.0
+#remote_theme: pages-themes/dinky@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 
-#theme: minima
+theme: minima
 author: radl_hirsch
 description: Persönliche Tourensammlung
 
 markdown: GFM
 
 plugins:
-- jekyll-relative-links
+  - jekyll-relative-links
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-admin
+  - jekyll-seo-tag
+
 relative_links:
   enabled: true
   collections: true
