@@ -9,7 +9,6 @@ description: Persönliche Tourensammlung
 
 markdown: GFM
 
-
 relative_links:
   enabled: true
   collections: true
