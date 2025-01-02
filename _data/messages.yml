@@ -1,0 +1,68 @@
+locales:
+  # English translation
+  # -------------------
+  en: &DEFAULT_EN
+    about: "About"
+    site_description: "My personal pages."
+    open_menu: "Open Menu"
+    btn_more: "More..."
+    posts: "Blog"
+    pages: "Pages"
+    projects: "Projects"
+    tagged_as: "Tagged as"
+    tagged_as_description_1: 'List of all posts, which were decorated with the tag "'
+    tagged_as_description_2: '".'
+    tag: "tag"
+    tags: "Tags"
+    home: "Home"
+    languages: "Languages"
+    lang_name: "English"
+    post_title: "Read this post in English..."
+    page_title: "Read this page in English..."
+    post_current_title: "Current language selection of this post -> English"
+    page_current_title: "Current language selection of this page -> English"
+    back: "Back"
+    reading_time: "Reading time"
+    minute: "minute"
+    minutes: "minutes"
+    menu: "Menu"
+    get_in_touch: "Get in touch"
+    go_to_top: "to top"
+    share_on_social_media_platform: "Share on $1"
+
+  en_US:
+    <<: *DEFAULT_EN     # use English translation for en_US
+  en_UK:
+    <<: *DEFAULT_EN     # use English translation for en_UK
+
+  # German translation
+  # -------------------
+  de: &DEFAULT_DE
+    <<: *DEFAULT_EN     # load English values as default
+    about: "&Uuml;ber"
+    site_description: "Meine pers&ouml;nlichen Seiten."
+    open_menu: "Men&uuml; &ouml;ffnen"
+    btn_more: "Mehr..."
+    posts: "Blog"
+    pages: "Seiten"
+    projects: "Projekte"
+    tagged_as: "Getagged als"
+    tagged_as_description_1: 'Liste aller Artikel, welche mit der Markierung "'
+    tagged_as_description_2: '" versehen wurden.'
+    home: "Startseite"
+    languages: "Sprachen"
+    lang_name: "Deutsch"
+    post_title: "Diesen Artikel auf Deutsch lesen..."
+    page_title: "Diese Seite auf Deutsch lesen..."
+    post_current_title: "Aktuelle Sprachauswahl dieses Artikels -> Deutsch"
+    page_current_title: "Aktuelle Sprachauswahl dieser Seite -> Deutsch"
+    back: "Zur&uuml;ck"
+    reading_time: "Lesezeit"
+    minute: "Minute"
+    minutes: "Minuten"
+    menu: "Menü"
+    get_in_touch: "Kontakt aufnehmen"
+    go_to_top: "Zum Anfang"
+    share_on_social_media_platform: "Auf $1 teilen"
+  de_DE:
+    <<: *DEFAULT_DE     # use German translation for de_DE
