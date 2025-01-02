@@ -1,0 +1,40 @@
+{% include lang-ref.html %}
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115916811-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-115916811-1');
+  </script>
+  <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
+  <meta charset="utf-8" />
+  <meta name="msvalidate.01" content="6C278EA84D78C46BEDA68B44BD46A150" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!--[if lte IE 8]><script src="{{ 'assets/js/ie/html5shiv.js' | relative_url }}"></script><![endif]-->
+  <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}" />
+  <!--[if lte IE 9]><link rel="stylesheet" href="{{ 'assets/css/ie9.css' | relative_url }}" /><![endif]-->
+  <!--[if lte IE 8]><link rel="stylesheet" href="{{ 'assets/css/ie8.css' | relative_url }}" /><![endif]-->
+  <link rel="stylesheet" href="{{ 'assets/css/syntax.css' | relative_url }}" />
+  {% if page.layout == "post" %}
+    <meta property="og:type" content="article" />
+    {% for tag in page.tags %}
+      <meta property="article:tag" content="{{ tag }}" />
+    {% endfor %}
+    {% for category in page.categories %}
+      <meta property="article:section" content="{{ category }}" />
+    {% endfor %}
+  {% endif %}
+  {% if page.date_modified %}
+    <meta property="article:modified_time" content="{{ page.date_modified | date_to_xmlschema }}" />
+  {% endif %}
+  {% seo %}
+  {% for link in site.data.navigation.locales[navlang].languages %}
+    {% assign ref_page=lang_ref_pages | where:"lang", link.lang | first %}
+    {% if ref_page %}
+    <link rel="alternate" hreflang="{{link.lang }}" href="{{ site.url }}{{ ref_page.url }}" />  
+    {% endif %}
+  {% endfor %}
+
+</head>
