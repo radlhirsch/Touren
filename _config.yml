@@ -1,15 +1,68 @@
-#remote_theme: pages-themes/dinky@v0.2.0
+# Site settings
+title: RadlHirsch's Outdoor Seiten
+subtitle:
+author: Wolfgang Müller-Hirsch
+bio: 'SOutdoor something in Esslingen, Germany.'
+avatar: assets/img/radl_hirsch.jpg
+email:
+description: My personal touring pages.
+baseurl: # the subpath of your site, e.g. /blog
+locale:             de
+url:                https://radlhirsch.github.io/Touren/
+street_address:
+city: Esslingen
+state:
+zip_code:
+country: Germany
+phone:
+
+# Social settings
+# 500px_url:
+# facebook_url: http://facebook.com/marco.stolze.73
+github_url: https://github.com/radlhirsch
+# gitlab_url: https://gitlab.com/u/mcpride
+# googleplus_url: https://plus.google.com/101037539053106314238
+# instagram_url:
+# pinterest_url:
+# slack_url:
+
+
+# Comments
+disqus_shortname:   unknown_author
+
+reading_time:       true
+words_per_minute:   200
+
+# Build settings
+# Jekyll
+permalink:          /:categories/:year/:month/:day/:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            false
+sass:
+  sass_dir:         _sass
+  style:            compressed
+
+compress_html:
+  clippings: []
+  comments: []
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
+
+# Gems
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
-
-theme: minima
-author: radl_hirsch
-description: Persönliche Tourensammlung
-
-markdown: GFM
-
-plugins:
-  - jekyll-relative-links
   - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap
@@ -17,13 +70,6 @@ plugins:
   - jekyll-admin
   - jekyll-seo-tag
 
-relative_links:
-  enabled: true
-  collections: true
-include:
-  - index.md
-  - README.md
-  - MTB.md
-  - Wandern.md
-  - Gravel.md
-  
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, _draft, _gentags.rb]
+# include: [BingSiteAuth.xml]
