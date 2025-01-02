@@ -2,7 +2,7 @@
 layout: post
 title:  "First post!"
 excerpt: "das ist mein erster Post"
-image: /assets/img/wolfgang.jpg
+image: /docs/assets/img/wolfgang.jpg
 tags: [wandern, MTB]
 categories: [post, allgemein]
 comments: true
