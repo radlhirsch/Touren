@@ -1,16 +1,16 @@
 # Site settings
-title: RadlHirsch's Outdoor Seiten
+title: McPride's thougths
 subtitle:
-author: Wolfgang Müller-Hirsch
-bio: 'SOutdoor something in Esslingen, Germany.'
-avatar: assets/img/radl_hirsch.jpg
+author: Marco Stolze
+bio: 'Software architect in Berlin, Germany.'
+avatar: assets/img/favicons/apple-icon-114x114.png
 email:
-description: My personal touring pages.
+description: My personal pages.
 baseurl: # the subpath of your site, e.g. /blog
-locale:             de
-url:                https://radlhirsch.github.io/Touren/
+locale:             en
+url:                https://mcpride.github.io
 street_address:
-city: Esslingen
+city: Berlin
 state:
 zip_code:
 country: Germany
@@ -18,17 +18,19 @@ phone:
 
 # Social settings
 # 500px_url:
-# facebook_url: http://facebook.com/marco.stolze.73
-github_url: https://github.com/radlhirsch
-# gitlab_url: https://gitlab.com/u/mcpride
-# googleplus_url: https://plus.google.com/101037539053106314238
+facebook_url: http://facebook.com/marco.stolze.73
+github_url: https://github.com/mcpride
+gitlab_url: https://gitlab.com/u/mcpride
+googleplus_url: https://plus.google.com/101037539053106314238
 # instagram_url:
+linkedin_url: https://www.linkedin.com/in/mstolze/
 # pinterest_url:
 # slack_url:
-
+twitter_url: https://twitter.com/tweetpride
+xing_url: https://www.xing.com/profile/Marco_Stolze3
 
 # Comments
-disqus_shortname:   unknown_author
+disqus_shortname:   mcpride
 
 reading_time:       true
 words_per_minute:   200
@@ -72,4 +74,4 @@ plugins:
 
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, _draft, _gentags.rb]
-# include: [BingSiteAuth.xml]
+include: [BingSiteAuth.xml]
